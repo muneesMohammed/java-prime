@@ -11,15 +11,17 @@ public class prime {
                 System.out.println(num+" is not prime");
             }
             else {
-            for (int i = 2; i <= num-1; i++) {
+            for (int i = 2; i <= num/2; i++) {
                 if (num % i == 0) {
-                    System.out.println(num+" is not prime");
                     flag = false;
-                   break;
+                break;
                 }
-                else {
-                    System.out.println(num+" is prime");
-                }
+            }
+            if (flag==false){
+                System.out.println(num+"is not prime");
+            }
+            else {
+                System.out.println(num+" is prime");
             }
         }
     }
